@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Visual Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+    
+                <div class="header__logo">
+                    <img src="./images/logo.png" alt="">
+                    <h1>Creative  <span id="spanLogo">Visual</span></h1>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a id="about" href="About.html">About</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Updates.html">Updates</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                    <div class="toggle__menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+        </div>
+    </div>
+</header>
+<!-----About Me------>
+
+<section class="banner">
+    <div class="container">
+        <div class="About__wrapper">
+            <div class="about__contents">
+                <h3>Things you need to know</h3>
+               <h1>About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur quasi modi quo odio eos quidem, tempora optio sed impedit sequi possimus, in doloremque. Ab eveniet, placeat ratione voluptas dignissimos eius facere, magni tempore nam incidunt sunt rem. In qui, facilis reiciendis quod doloribus quibusdam voluptate magni architecto tempore eligendi delectus.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero optio ut excepturi earum incidunt magnam iste eos sunt dolores nobis, nisi temporibus non fuga corrupti aspernatur nihil similique inventore asperiores.</p>
+                <div class="About__icons">
+                    <i class="fa-brands fa-facebook fa-2xl"></i>
+                    <i class="fa-brands fa-twitter fa-2xl"></i>
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                    <i class="fa-brands fa-youtube fa-2xl"></i>
+                </div>
+            </div>
+                <img src="./images/aboutme.png" alt="">
+
+        </div>
+    </div>
+</div>
+<div class="chevron">
+    <i class="fa-sharp fa-solid fa-chevron-down fa-2xl"></i>
+</section>
+
+
+
+<section class="services">
+<div class="Recentprojects">
+    <div class="container">
+        <h1>My Recent Projects</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="LatestTrends_wrapper">
+            <div class="LatestTrend_Card">
+
+                <img src="./images/latest3.png" alt="" >
+
+                <div class="CardContent">
+                    <h4>Front line Business Solution Inc.</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloribus natus veniam ratione excepturi consectetur.
+
+                    </p>
+                </div>
+            </div>
+            <div class="LatestTrend_Card">
+
+                <img src="./images/latest1.png" alt="" >
+
+                <div class="CardContent">
+                    <h4>Front line Business Solution Inc.</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloribus natus veniam ratione excepturi consectetur.
+
+                    </p>
+                </div>
+            </div>
+            <div class="LatestTrend_Card">
+
+                <img src="./images/latest2.png" alt="" >
+
+                <div class="CardContent">
+                    <h4>Front line Business Solution Inc.</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloribus natus veniam ratione excepturi consectetur.
+
+                    </p>
+                </div>
+            </div>
+            <div class="LatestTrend_Card">
+
+                <img src="./images/latest2.png" alt="" >
+
+                <div class="CardContent">
+                    <h4>Front line Business Solution Inc.</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloribus natus veniam ratione excepturi consectetur.
+
+                    </p>
+                </div>
+            </div>
+            <div class="LatestTrend_Card">
+
+                <img src="./images/latest2.png" alt="" >
+
+                <div class="CardContent">
+                    <h4>Front line Business Solution Inc.</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloribus natus veniam ratione excepturi consectetur.
+
+                    </p>
+                </div>
+            </div>
+            <div class="LatestTrend_Card">
+
+                <img src="./images/latest2.png" alt="" >
+
+                <div class="CardContent">
+                    <h4>Front line Business Solution Inc.</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloribus natus veniam ratione excepturi consectetur.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="section">
+            <div class="container">
+                <div class="section_text">
+                <h3>Feel free to talk us about your Projects</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ab?</p>
+            </div>
+            <div class="section__content">
+                <a href="">Contact us</a>
+            </div>
+        </div>
+
+
+
+    </section>
+     <!------Script for toggle menu-->
+     <script>
+
+        const nav = document.querySelector('.nav');
+        const toggle__menu = document.querySelector('.toggle__menu');
+
+        toggle__menu.addEventListener("click",()=>{
+         toggle__menu.classList.toggle('open'); 
+         nav.classList.toggle('open');
+        })
+
+      </script>
+
+    
+    <footer>
+        <div class="icons">
+            <i class="fa-brands fa-facebook fa-2xl"></i>
+            <i class="fa-brands fa-twitter fa-2xl"></i>
+            <i class="fa-brands fa-instagram fa-2xl"></i>
+            <i class="fa-brands fa-youtube fa-2xl"></i>
+            <i class="fa-solid fa-envelope fa-2xl"></i>
+        </div>
+        <div class="center-text">Baloc Road, brgy san ignacio San Pablo city,Laguna 4000</div>
+        <div class="right-text">©CreativeVisualDesign 2022</div>
+      </footer>
+      
+
+</body>
+</html>

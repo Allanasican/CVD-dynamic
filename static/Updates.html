@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Visual Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+    
+                <div class="header__logo">
+                    <img src="./images/logo.png" alt="">
+                    <h1>Creative  <span id="spanLogo">Visual</span></h1>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a id="Home" href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Updates.html">Updates</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                    <div class="toggle__menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+        </div>
+    </div>
+</header>
+
+<section class="update__trends">
+    <div class="container">
+        <div class="trends__info">
+            <h1><?php echo get_field('update_title'); ?></h1>
+            <p><?php echo get_field('updates_content'); ?></p>
+        </div>
+        <div class="trends__wrapper">
+        <?php if(have_rows('update_card')) : while(the_repeater_field('update_card')) : ?>
+            <div class="trends__wrapper1">
+               <div class="trends__content">
+               <?php
+                $img = get_sub_field('update_image');
+                if(!empty($img) ):?>
+
+                <img src="<?php echo esc_url($img['url']); ?>" alt="<?php echo esc_attr($img['alt']); ?>">
+                <?php endif; ?>
+    
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-user"></i><?php echo get_sub_field('update_name'); ?> </a></li>
+                        <li><a href=""><i class="fa-solid fa-calendar-days"></i><?php echo get_sub_field('update_date'); ?> </a></li>
+                        <li><a href=""><i class="fa-solid fa-tags"></i><?php echo get_sub_field('update_design_title'); ?> </a></li>
+                    </ul>
+                    <h3><?php echo get_sub_field('update_title'); ?></h3>
+                     <p> <?php echo get_sub_field('update_content'); ?></p>
+    
+                    <a href="">Read more...</a>
+               </div> 
+    
+               <div class="trends__content">
+                    <img id="img" src="./images/trends2.png" alt="">
+    
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-user"></i>Allan Asican</a></li>
+                        <li><a href=""><i class="fa-solid fa-calendar-days"></i>March 3, 2023</a></li>
+                        <li><a href=""><i class="fa-solid fa-tags"></i>Web Design | Wire Frame</a></li>
+                    </ul>
+    
+                    <h3>Designing to Code</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aspernatur amet, ipsa ab tempora porro iste est aut aliquam architecto facere quod reiciendis alias soluta, asperiores labore obcaecati quisquam voluptate.</p>
+    
+                    <a href=""class="margin-bottom" >Read more...</a>
+               </div> 
+            </div>
+            <div class="trends__wrapper2">
+                <div class="trends__content2">
+                    <h3>CATEGORIES</h3>
+                    <table>
+                       <tr>
+                            <td>Web Design</td>
+                            <td>(2)</td>
+                       </tr>
+                       <tr>
+                            <td>Web Development</td>
+                            <td>(3)</td>
+                        </tr>
+                       <tr>
+                            <td>Wire Frame</td>
+                            <td>(1)</td>
+                        </tr>
+                       <tr>
+                            <td>Vector & Logo</td>
+                            <td>(5)</td>
+                        </tr>
+                       <tr>
+                            <td>Social Media</td>
+                            <td>(2)</td>
+                   </tr>
+                    </table>
+                </div>
+                
+
+                
+    
+                <div class="trends__content2">
+                    <h3 id="h3">RECENT POST</h3>
+                    <div class="recent">
+                        
+                        <img src="./images/post1.png" alt="">
+                        <p> <b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </b> <br> <br>  March 21, 2022</p>
+                    </div>
+                    <div class="recent">
+                        
+                        <img src="./images/post2.png" alt="">
+                        <p> <b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </b> <br> <br>  March 21, 2022</p>
+                    </div>
+                    <div class="recent">
+                        
+                        <img src="./images/post3.png" alt="">
+                        <p> <b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </b> <br> <br>  March 21, 2022</p>
+                    </div>
+                </div>
+                <div class="trends__content2">
+                    <h3 id="h3__1">TAGS</h3>
+                    <div class="tags__wrapper">
+                        <a href="#">Web Design</a>
+                        <a href="#">Wireframe</a>
+                        <a class="webdev"  href="#">Web Development</a>
+                        <a href="#">Logo</a>
+                        <a href="#">Vector</a>
+                        <a href="#">Social Media</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----Contact US-->
+
+<section class="section">
+    <div class="container">
+        <div class="section_text">
+        <h3>Feel free to talk us about your Projects</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ab?</p>
+    </div>
+    <div class="section__content">
+        <a href="">Contact us</a>
+    </div>
+</div>
+
+
+
+</section>
+ <!------Script for toggle menu-->
+ <script>
+
+    const nav = document.querySelector('.nav');
+    const toggle__menu = document.querySelector('.toggle__menu');
+
+    toggle__menu.addEventListener("click",()=>{
+     toggle__menu.classList.toggle('open'); 
+     nav.classList.toggle('open');
+    })
+
+  </script>
+    
+    <footer>
+        <div class="icons">
+            <i class="fa-brands fa-facebook fa-2xl"></i>
+            <i class="fa-brands fa-twitter fa-2xl"></i>
+            <i class="fa-brands fa-instagram fa-2xl"></i>
+            <i class="fa-brands fa-youtube fa-2xl"></i>
+            <i class="fa-solid fa-envelope fa-2xl"></i>
+        </div>
+        <div class="center-text">Baloc Road, brgy san ignacio San Pablo city,Laguna 4000</div>
+        <div class="right-text">©CreativeVisualDesign 2022</div>
+      </footer>
+      
+
+</body>
+</html>

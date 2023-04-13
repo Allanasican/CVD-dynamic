@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Visual Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+    
+                <div class="header__logo">
+                    <img src="./images/logo.png" alt="">
+                    <h1>Creative  <span id="spanLogo">Visual</span></h1>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a id="Home" href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Updates.html">Updates</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                    <div class="toggle__menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+        </div>
+    </div>
+</header>
+<hr>
+<!-----UPDATE------
+<div class="contact__container">
+    <div class="contact__wrapper">
+        <div class="contact__content">
+            <h1>Contact</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat iusto, quod quae suscipit totam possimus voluptatem voluptate odit harum minus.</p>
+            
+            <div class="contact__icons"></div>
+            <ul>
+            <i class="fa-solid fa-phone-flip"></i>
+            <p>+63 932 102 0819</p>
+            <i class="fa-solid fa-envelope"></i>
+            <p>inquire@©Creativevisualdesign</p>
+            <i class="fa-sharp fa-solid fa-location-dot"></i>
+         <p>Baloc Road, brgy san ignacio San Pablo city,Laguna 4000</p>   
+        </ul> 
+        </div>
+    </div>
+</div>-->
+<!----->
+<!-------Contact-->
+<section class="contact_section">
+<div class="container">
+        <div class="about__wrapper">
+
+    <div class="contact__wrapper"> 
+    <h1>Contact</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quaerat.</p>
+    <div class="icon">
+        <i class="fa-solid fa-phone-flip fa-sm"></i>
+        <span class="text" style="  margin-left: 5px;">+63 932 102 0819</span>
+    </div>
+    <div class="icon">
+        <i class="fa-solid fa-envelope fa-sm"></i>
+        <span class="text"style="  margin-left: 5px;">inquire@©Creativevisualdesign</span>
+    </div>
+    <div class="icon">
+        <i class="fa-sharp fa-solid fa-location-dot fa-sm"></i>
+        <span class="text" style="  margin-left: 13px;">Baloc Road, brgy san ignacio San Pablo city,Laguna 4000</span>
+    </div>
+    <div class="social__icon">
+        <i class="fa-brands fa-facebook fa-xl"></i>
+        <i class="fa-brands fa-twitter fa-xl"></i>
+        <i class="fa-brands fa-instagram fa-xl"></i>
+        <i class="fa-brands fa-youtube fa-xl"></i>
+    </div>
+    </div>
+    <div class="form-container">
+        <form>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <input type="text" id="email" name="email" placeholder="Enter Email">
+            <textarea id="message" name="message" placeholder="message" required></textarea>
+            <a href="#" class="Button">EXPLORE MORE</a>
+      </div>
+    
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+<!----Contact US-->
+
+
+
+</section>
+ <!------Script for toggle menu-->
+ <script>
+
+    const nav = document.querySelector('.nav');
+    const toggle__menu = document.querySelector('.toggle__menu');
+
+    toggle__menu.addEventListener("click",()=>{
+     toggle__menu.classList.toggle('open'); 
+     nav.classList.toggle('open');
+    })
+
+  </script>
+<hr>
+    <footer>
+        <div class="icons">
+            <i class="fa-brands fa-facebook fa-2xl"></i>
+            <i class="fa-brands fa-twitter fa-2xl"></i>
+            <i class="fa-brands fa-instagram fa-2xl"></i>
+            <i class="fa-brands fa-youtube fa-2xl"></i>
+            <i class="fa-solid fa-envelope fa-2xl"></i>
+        </div>
+        <div class="center-text">Baloc Road, brgy san ignacio San Pablo city,Laguna 4000</div>
+        <div class="right-text">©CreativeVisualDesign 2022</div>
+      </footer>
+      
+
+</body>
+</html>
